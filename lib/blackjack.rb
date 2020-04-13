@@ -59,8 +59,8 @@ def runner
   welcome
   current = 0 
   initial_round 
-  binding.pry
   current += initial_round
+  binding.pry
   while current <= 21 do
     current = hit?(current)
     display_card_total(current)
