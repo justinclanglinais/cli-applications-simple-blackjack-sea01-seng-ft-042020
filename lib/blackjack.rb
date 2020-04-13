@@ -58,8 +58,8 @@ end
 def runner
   welcome
   current = 0 
-  initial_round 
-  current += initial_round.to_i
+  initial = initial_round 
+  current += initial
   if current <= 21
     current = hit?(current)
     display_card_total(current)
