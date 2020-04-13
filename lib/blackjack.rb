@@ -63,6 +63,7 @@ def runner
   while current <= 21 do
     current = hit?(current)
     display_card_total(current)
+    current
   end
   end_game(current)
   current
