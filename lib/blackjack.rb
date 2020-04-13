@@ -62,9 +62,8 @@ def runner
   current += initial_round
   while current <= 21 do
     current = hit?(current)
+    display_card_total(current)
   end
-      display_card_total(current)
-
   end_game(current)
   current = 0 
 end
