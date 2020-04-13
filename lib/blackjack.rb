@@ -60,10 +60,8 @@ def runner
   current = 0 
   initial_round 
   current += initial_round
-  while current <= 21 do
+  if current <= 21 do
     current = hit?(current)
-      binding.pry
-
     display_card_total(current)
   end
   end_game(current)
