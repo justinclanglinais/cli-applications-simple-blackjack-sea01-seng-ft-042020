@@ -59,7 +59,6 @@ def runner
   welcome
   current = 0 
   initial_round 
-  binding.pry
   current += initial_round
   while current < 21
     hit?(current)
