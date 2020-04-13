@@ -64,7 +64,7 @@ def runner
     current = hit?(current)
     display_card_total(current)
   end
-  
+  binding.pry
   end_game(current)
   current = 0 
 end
